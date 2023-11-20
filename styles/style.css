@@ -57,3 +57,15 @@ figure {
   margin: 7% 0 2.5%;
   font-size: 30px;
 }
+
+.content__text-block {
+  font-size: 30px;
+}
+
+.content__text-block .content__paragraph:not(:last-child) {
+  margin: 0 0 1.5em;
+}
+
+.content__paragraph a {
+  color: inherit;
+}
