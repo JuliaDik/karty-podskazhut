@@ -41,7 +41,7 @@ figure {
 }
 
 .content-section {
-  padding-inline: 5vi;
+  padding: 0 5vi;
 }
 
 .header {
@@ -61,6 +61,15 @@ figure {
 
 .content__text-block {
   font-size: 30px;
+}
+
+.content__text-block_type_first-lettered .content__paragraph:first-of-type:first-letter {
+  display: inline-block;
+  margin-inline-end: 1px;
+  padding: 0 4px;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: var(--accent-color);
 }
 
 .content__text-block .content__paragraph:not(:last-child) {
