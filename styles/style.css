@@ -1,9 +1,9 @@
 :root {
-  --bg-color: #F3EFEC;
-  --text-color: #312A4E;
-  --accent-color: #FFAB6B;
+  --bg-color: #f3efec;
+  --text-color: #312a4e;
+  --accent-color: #ffab6b;
   --main-font: Raleway;
-  --accent-font: 'STIX Two Text';
+  --accent-font: "STIX Two Text";
 }
 
 *,
@@ -41,11 +41,11 @@ figure {
 }
 
 .content-section {
-  padding: 0 5vi;
+  padding-inline: 5vi;
 }
 
 .header {
-  padding: 10% 0 0;
+  padding-block-start: 10%;
 }
 
 .header__title {
@@ -54,7 +54,8 @@ figure {
 }
 
 .content__title {
-  margin: 7% 0 2.5%;
+  margin-block-start: 7%;
+  margin-block-end: 2.5%;
   font-size: 30px;
 }
 
@@ -63,9 +64,41 @@ figure {
 }
 
 .content__text-block .content__paragraph:not(:last-child) {
-  margin: 0 0 1.5em;
+  margin-block-end: 1.5em;
 }
 
 .content__paragraph a {
   color: inherit;
+}
+
+.content__blockquote {
+  margin-inline: auto;
+  margin-block-end: 1.5em;
+  inline-size: 75%;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 200%;
+}
+
+.content__list {
+  inset-inline-start: 40px;
+  list-style: none;
+}
+
+.content__list li {
+  position: relative;
+}
+
+.content__list li:not(:last-child) {
+  margin-block-end: 10px;
+}
+
+.content__list li::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  background: url(../images/marker-light.svg) no-repeat center/contain;
 }
