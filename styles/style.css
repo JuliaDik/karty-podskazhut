@@ -63,7 +63,8 @@ figure {
   font-size: 30px;
 }
 
-.content__text-block_type_first-lettered .content__paragraph:first-of-type:first-letter {
+.content__text-block_type_first-lettered
+  .content__paragraph:first-of-type:first-letter {
   display: inline-block;
   margin-inline-end: 1px;
   padding: 0 4px;
@@ -78,6 +79,25 @@ figure {
 
 .content__paragraph a {
   color: inherit;
+}
+
+.content__figure {
+  position: relative;
+  left: -5vi;
+  margin-block: 7%;
+  width: calc(100% + 10vi);
+}
+
+.content__picture {
+  inline-size: 100%;
+}
+
+.content__picture-caption {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: normal;
+  border-bottom: 1px solid #312a4e;
 }
 
 .content__blockquote {
