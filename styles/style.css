@@ -44,6 +44,21 @@ figure {
   padding: 0 5vi;
 }
 
+.colored-text {
+  position: relative;
+}
+
+.colored-text::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  bottom: 10px;
+  z-index: -1;
+  width: calc(100% + 6px);
+  height: 0.25em;
+  background-color: var(--accent-color);
+}
+
 .header {
   padding-block-start: 10%;
 }
@@ -107,6 +122,24 @@ figure {
   font-size: 18px;
   font-style: italic;
   line-height: 200%;
+}
+
+.content__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 7%;
+  aspect-ratio: 4/3;
+  border: 1px solid currentColor;
+}
+
+.content__card-title {
+  font-size: 60px;
+}
+
+.content__card-subtitle {
+  font-size: 18px;
 }
 
 .content__list {
