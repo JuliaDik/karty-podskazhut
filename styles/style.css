@@ -33,7 +33,7 @@ figure {
   margin: 0;
 }
 
-button:focus ,
+button:focus,
 a:focus {
   outline: none;
 }
@@ -218,4 +218,15 @@ button:disabled {
   width: 15px;
   height: 15px;
   background: url(../images/marker-light.svg) no-repeat center/contain;
+}
+
+.footer {
+  margin-block-start: 10%;
+  padding: 2.5%;
+  border-top: 1px solid currentColor;
+}
+
+.footer__copyright {
+  font-size: 18px;
+  text-align: center;
 }
