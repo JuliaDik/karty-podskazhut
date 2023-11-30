@@ -68,6 +68,47 @@ figure {
   font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
 }
 
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20px;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+}
+
+.header__theme-toggler {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.header__theme-button {
+  position: relative;
+  padding: 0;
+  font-family: inherit;
+  color: currentColor;
+  border: none;
+  background-color: transparent;
+  cursor: pointer
+}
+
+.header__theme-button:hover::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  bottom: 3px;
+  z-index: -1;
+  width: calc(100% + 6px);
+  height: 0.25em;
+  background-color: var(--accent-color);
+}
+
+.header__theme-button_is-active {
+  font-weight: 700;
+}
+
 .content__title {
   margin-block-start: 7%;
   margin-block-end: 2.5%;
