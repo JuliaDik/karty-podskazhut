@@ -40,11 +40,17 @@ a:focus {
 
 button:focus-visible,
 a:focus-visible {
-  outline: 1px solid currentColor ;
+  outline: 1px solid currentColor;
 }
 
 button:disabled {
   pointer-events: none;
+}
+
+.theme_dark {
+  --bg-color: #171717;
+  --text-color: #b3b3b3;
+  --accent-color: transparent;
 }
 
 .heading {
@@ -71,6 +77,17 @@ button:disabled {
   width: calc(100% + 6px);
   height: 0.25em;
   background-color: var(--accent-color);
+}
+
+.theme_dark .colored-text::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  bottom: 10px;
+  z-index: -1;
+  width: calc(100% + 6px);
+  height: 0.25em;
+  background-image: url(../images/pattern.svg);
 }
 
 .header {
@@ -105,7 +122,7 @@ button:disabled {
   color: currentColor;
   border: none;
   background-color: transparent;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .header__theme-button:hover::after {
@@ -117,6 +134,17 @@ button:disabled {
   width: calc(100% + 6px);
   height: 0.25em;
   background-color: var(--accent-color);
+}
+
+.theme_dark .header__theme-button:hover::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  bottom: 3px;
+  z-index: -1;
+  width: calc(100% + 6px);
+  height: 0.25em;
+  background-image: url(../images/pattern.svg);
 }
 
 .header__theme-button_is-active {
@@ -141,6 +169,17 @@ button:disabled {
   font-size: 30px;
   font-weight: 700;
   background-color: var(--accent-color);
+}
+
+.theme_dark
+  .content__text-block_type_first-lettered
+  .content__paragraph:first-of-type:first-letter {
+  display: inline-block;
+  margin-inline-end: 1px;
+  padding: 0 4px;
+  font-size: 30px;
+  font-weight: 700;
+  border: 1px solid #b3b3b3;
 }
 
 .content__text-block .content__paragraph:not(:last-child) {
@@ -218,6 +257,16 @@ button:disabled {
   width: 15px;
   height: 15px;
   background: url(../images/marker-light.svg) no-repeat center/contain;
+}
+
+.theme_dark .content__list li::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  background: url(../images/marker-dark.svg) no-repeat center/contain;
 }
 
 .footer {
