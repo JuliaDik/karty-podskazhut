@@ -1,13 +1,12 @@
 <h1>Карты подскажут</h1>
 
 <figure>
-  <img src="./images/project-light.png">
   <figcaption>Светлая тема</figcaption>
+  <img src="./images/project-light.png">
 </figure>
-
 <figure>
-  <img src="./images/project-dark.png">
   <figcaption>Темная тема</figcaption>
+  <img src="./images/project-dark.png">
 </figure>
 
 <h2>Описание</h2>
