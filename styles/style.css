@@ -24,7 +24,7 @@
   box-sizing: border-box;
 }
 
-/* ОБЩИЕ СТИЛИ */
+/* общие стили */
 
 .page {
   min-inline-size: 360px;
@@ -34,7 +34,7 @@
   background-color: var(--bg-color);
 }
 
-/* СБРОС СТИЛЕЙ */
+/* сброс стилей */
 
 p,
 h1,
@@ -48,7 +48,7 @@ figure {
   margin: 0;
 }
 
-/* СОСТОЯНИЯ ССЫЛОК И КНОПОК */
+/* состояния ссылок и кнопок */
 
 a:focus,
 button:focus {
@@ -64,7 +64,7 @@ button:disabled {
   pointer-events: none;
 }
 
-/* МИКСЫ */
+/* миксы */
 
 .heading {
   font-family: var(--accent-font, serif);
@@ -259,7 +259,7 @@ button:disabled {
   font-size: 18px;
 }
 
-/* ПЕРЕОПРЕДЕЛЕНИЕ СТИЛЕЙ ДЛЯ ТЕМНОЙ ТЕМЫ */
+/* переопределение стилей для темной темы */
 
 .theme_dark .colored-text::after {
   background-image: url(../images/pattern.svg);
