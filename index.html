@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="page theme_dark">
+    <!-- ШАПКА САЙТА: начало -->
     <header class="header">
       <h1 class="header__title heading content-section">Карты подскажут</h1>
       <nav class="header__menu content-section">
@@ -20,6 +21,7 @@
             <use href="./images/logo.svg#logo"></use>
           </svg>
         </div>
+        <!-- Переключатель темы: начало -->
         <ul class="header__theme-toggler">
           <li>
             <button class="header__theme-button header__theme-button_type_dark">
@@ -28,16 +30,22 @@
           </li>
           <li>
             <button
-              class="header__theme-button header__theme-button_type_light"
+              class="header__theme-button header__theme-button_type_light header__theme-button_is-active"
               disabled
             >
               Светлая
             </button>
           </li>
         </ul>
+        <!-- Переключатель темы: конец -->
       </nav>
     </header>
+    <!-- ШАПКА САЙТА: конец -->
+
+    <!-- ОСНОВНОЙ КОНТЕНТ: начало -->
     <main class="content content-section">
+      
+      <!-- Блок: начало -->
       <h2 class="content__title heading">
         Креативный подход к решению проблем
       </h2>
@@ -55,6 +63,9 @@
           одном из самых креативных — колоде карт.
         </p>
       </div>
+      <!-- Блок: конец -->
+
+      <!-- Блок: начало -->
       <h2 class="content__title heading">Что это за колода</h2>
       <div class="content__text-block content__text-block_type_first-lettered">
         <p class="content__paragraph">
@@ -65,6 +76,7 @@
           жанра эмбиент Брайан Ино и мультимедиа-художник Питер Шмидт.
         </p>
       </div>
+      <!-- Картинка с подписью: начало -->
       <figure class="content__figure">
         <picture>
           <source
@@ -77,17 +89,16 @@
           />
           <img
             class="content__picture"
-            src="./images/cards-1x.png"
-            srcset="cards-1x.png 1x, cards-2x.png 2x"
-            ,
-            alt="На столе - смартфон, ручка, карточка, коробки, цветок в горшке."
+            srcset="./images/cards-1x.png 1x, ./images/cards-2x.png 2x"
+            alt="Колода Oblique Strategies на деревянном столе в окружении смартфона, ручки, записной книжки, цветка"
             loading="lazy"
           />
         </picture>
         <figcaption class="content__picture-caption">
-          Колода Oblique Strategies
+          <p>Колода Oblique Strategies</p>
         </figcaption>
       </figure>
+      <!-- Картинка с подписью: конец -->
       <div class="content__text-block">
         <p class="content__paragraph">
           Oblique Strategies в основном используют музыканты, но колода подходит
@@ -103,18 +114,25 @@
           Решаете только вы.
         </p>
       </div>
+      <!-- Блок: конец -->
+
+      <!-- Блок: начало -->
       <h2 class="content__title heading">Как работают «обходные стратегии»</h2>
       <div class="content__text-block content__text-block_type_first-lettered">
         <p class="content__paragraph">
           Вот что сам Брайан Ино рассказывает о создании Oblique Strategies:
         </p>
+        <!-- Цитата: начало -->
         <blockquote class="content__blockquote">
-          «Эти карты появились, потому что я оказывался в рабочих ситуациях
-          (особенно в звукозаписывающих студиях), когда из-за паники быстро
-          забывал, что кроме самых очевидных решений были и другие — косвенные.
-          И часто именно такие неочевидные способы выдавали гораздо более
-          интересные результаты, чем решения „в лоб“».
+          <p>
+            «Эти карты появились, потому что я оказывался в рабочих ситуациях
+            (особенно в звукозаписывающих студиях), когда из-за паники быстро
+            забывал, что кроме самых очевидных решений были и другие —
+            косвенные. И часто именно такие неочевидные способы выдавали гораздо
+            более интересные результаты, чем решения „в лоб“».
+          </p>
         </blockquote>
+        <!-- Цитата: конец -->
         <p class="content__paragraph">
           Таким образом, колода Ино поощряет нас видеть препятствия не как
           тупики, а как отправные точки для поиска более интересных решений.
@@ -137,25 +155,39 @@
           >.
         </p>
       </div>
+      <!-- Блок: конец -->
+
+      <!-- Карточка: начало -->
       <article class="content__card">
         <h3 class="content__card-title heading">
           Use an <span class="colored-text">old idea</span>
         </h3>
         <p class="content__card-subtitle">Воспользуйтесь старой идеей</p>
       </article>
+      <!-- Карточка: конец -->
+
+      <!-- Блок: начало -->
       <h2 class="content__title heading">Кто пользовался Oblique Strategies</h2>
       <div class="content__text-block">
+        <!-- Список: начало -->
         <ul class="content__list">
           <li>Дэвид Боуи во время записи Берлинской трилогии;</li>
           <li>Talking Heads и Дэвид Бирн в сольной карьере;</li>
           <li>Coldplay;</li>
           <li>MGMT.</li>
         </ul>
+        <!-- Список: конец -->
       </div>
+      <!-- Блок: конец -->
     </main>
+    <!-- ОСНОВНОЙ КОНТЕНТ: конец -->
+
+    <!-- ПОДВАЛ САЙТА: начало -->
     <footer class="footer">
       <p class="footer__copyright">VЁRSTKA</p>
     </footer>
+    <!-- ПОДВАЛ САЙТА: конец -->
+
     <script src="./scripts/theme-changer.js"></script>
   </body>
 </html>
